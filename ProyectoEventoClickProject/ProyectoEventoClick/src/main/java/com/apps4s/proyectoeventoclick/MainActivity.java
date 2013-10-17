@@ -1,10 +1,13 @@
 package com.apps4s.proyectoeventoclick;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -20,10 +23,17 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                TextView ing = (TextView)findViewById(R.id.lblTitulo);
+                EditText ing = (EditText)findViewById(R.id.editText);
                 TextView sal = (TextView)findViewById(R.id.txtRespuesta);
 
                 sal.setText(ing.getText());
+
+                quitarTeclado(sal);
+            }
+
+            private void quitarTeclado(View view) {
+                InputMethodManager teclado = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                teclado.hideSoftInputFromWindow(view.getWindowToken(),0);
             }
         });
 
