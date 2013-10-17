@@ -3,6 +3,9 @@ package com.apps4s.proyectoeventoclick;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +13,20 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Codificar el Boton
+        Button boton1 = (Button)findViewById(R.id.btnBoton);
+        boton1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                TextView ing = (TextView)findViewById(R.id.lblTitulo);
+                TextView sal = (TextView)findViewById(R.id.txtRespuesta);
+
+                sal.setText(ing.getText());
+            }
+        });
+
     }
 
 

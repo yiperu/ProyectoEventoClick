@@ -11,6 +11,33 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/holder"
+        android:id="@+id/lblTitulo"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_boton"
+        android:id="@+id/btnBoton"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_alignLeft="@+id/lblTitulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mostrar_respuesta"
+        android:id="@+id/txtRespuesta"
+        android:layout_below="@+id/btnBoton"
+        android:layout_alignLeft="@+id/btnBoton" />
 
 </RelativeLayout>

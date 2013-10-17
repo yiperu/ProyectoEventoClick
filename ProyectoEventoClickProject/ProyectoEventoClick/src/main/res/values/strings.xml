@@ -3,6 +3,10 @@
 
     <string name="app_name">ProyectoEventoClick</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Proyecto Boton Click..!</string>
+
+    <string name="holder">Ingrese un Texto</string>
+    <string name="titulo_boton">Ejecutar</string>
+    <string name="mostrar_respuesta">La Reespuesta Aqui</string>
 
 </resources>
