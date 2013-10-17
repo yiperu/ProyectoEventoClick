@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProyectoEventoClick/ProyectoEventoClick.iml" filepath="$PROJECT_DIR$/ProyectoEventoClick/ProyectoEventoClick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoEventoClickProject.iml" filepath="$PROJECT_DIR$/ProyectoEventoClickProject.iml" />
+    </modules>
+  </component>
+</project>
+
